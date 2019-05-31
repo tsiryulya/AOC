@@ -117,7 +117,7 @@ $(document).ready(function () {
 });
 
 
-$('#myModal').on('show.bs.modal', function (event) {
-    var infoBtn = $(event.relatedTarget);
+//$('#myModal').on('show.bs.modal', function (event) {
+   // var infoBtn = $(event.relatedTarget);
     //var recipient = infoBtn.data();
-});
+//});

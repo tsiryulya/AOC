@@ -34,7 +34,7 @@ body {
  */
 
 .sidebar-sticky {
-    position: -webkit-sticky;
+    position: fixed;
     position: sticky;
     top: 47px;
     height: calc(100vh - 47px);
@@ -45,7 +45,7 @@ body {
 
 .sidenav {
     position: fixed;
-    top: 0;
+    top: 46px;
     bottom: 0;
     left: 0;
     z-index: 100;
@@ -59,7 +59,7 @@ body {
 
 .sidenav a,
 .dropdown-btn {
-    padding: .5rem 2rem;
+    padding: .5rem 2.4rem;
     text-decoration: none;
     color: #ffffff;
     display: block;
@@ -209,7 +209,6 @@ main {
 }
 
 .scheme-mo {
-    content: url(../img/MO.png);
     width: 100%;
 }
 
