@@ -1,0 +1,9 @@
+// Built from https://css-tricks.com/snippets/css/using-font-face/
+@mixin font-face( $font-name, $font-path, // path + file name. Ex : path/to/font/filename
+$font-weight: normal, $font-style: normal) {
+  @font-face {
+    font-family: $font-name;
+    font-style : $font-style;
+    font-weight: $font-weight;
+  }
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href=src/fonts/font-awesome/css/all.css> </head> <body>
+    <nav>
+        <div class="navbar sticky-top d-flex justify-content-start bg-custom ">
+            <a class="navbar-brand col-sm-3 col-md-2 m-0 p-0" href="#">
+                <img class="logo" src="img/ru_logo.png">
+                <span class="menu p-2"><i class="fas fa-ellipsis-v"></i></span>
+            </a>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-md-2 d-none d-md-block sidenav">
+                <div class="sidebar-sticky">
+                    <div class="nav flex-column">
+                        <button class="dropdown-btn">Администрирование
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-container">
+                            <button class="dropdown-btn dropdown-btn-l2">Настройки модулей
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-container">
+                                <a href="#">AOC</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-0">
+                    <nav aria-label="breadcrumb m-0 p-0">
+                        <ol class="breadcrumb p-0">
+                            <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
+                            <li class="breadcrumb-item"><a href="#">Администрирование</a></li>
+                            <li class="breadcrumb-item"><a href="#">Настройка модулей</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Ответы МО абонентам</li>
+                        </ol>
+                    </nav>
+                </div>
+                <h1 class="h4">Ответы МО абонентам</h1>
+                <div class="container p-0 m-0">
+                    <div class="row">
+                        <div class="col-md-10 col-sm-8 col-lg-8 mx-lg-3" style="background: #ffffff">
+
+                            <div class="row form-inline border-bottom mt-3 pb-3 ">
+                                <div class="search px-3">
+                                    <i class="fas fa-search p-1"></i>
+                                    <input type="text" class="form-control mr-sm-2 input-search" placeholder="Поиск..." aria-label="Search">
+                                </div>
+                                <button class="btn btn-primary m-3 my-sm-0" type="submit">Создать</button>
+                            </div>
+
+                            <table id="tableId" class="table table-striped table-bordered mt-3" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th scope="col"></th>
+                                        <th scope="col">Имя</th>
+                                        <th scope="col">Статус</th>
+                                        <th scope="col">Комментарий</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td>Mark</td>
+                                        <td>Otto</td>
+                                        <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td>Jacob</td>
+                                        <td>Thornton</td>
+                                        <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row"></th>
+                                        <td>Larry</td>
+                                        <td>the Bird</td>
+                                        <td>@twitter</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <!-- The Modal -->
+                            <div class="modal" id="myModal">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <!-- Modal Header -->
+                                        <div class="modal-header">
+                                            <h4 class="modal-title h5">Имя</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+
+                                        <!-- Modal body -->
+                                        <div class="modal-body">
+                                            <!-- Nav tabs -->
+                                            <ul class="nav nav-tabs">
+                                                <li class="nav-item ">
+                                                    <a class="nav-link active" href="#listMistake">Список ошибок</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#texts">Тексты</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#connection">Соединения</a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab panes -->
+                                            <div class="tab-content">
+                                                <div id="listMistake" class="container tab-pane active"><br>
+                                                    <table id="tableModalId" class="table table-modal table-bordered mt-3" style="width:100%">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">Модуль</th>
+                                                                <th scope="col">Код</th>
+                                                                <th scope="col">Тип</th>
+                                                                <th scope="col">Описание</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td scope="row">Mark</td>
+                                                                <td>Mark</td>
+                                                                <td>Otto</td>
+                                                                <td>@mdo</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">Mark</td>
+                                                                <td>Jacob</td>
+                                                                <td>Thornton</td>
+                                                                <td>@fat</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td scope="row">Mark</td>
+                                                                <td>Larry</td>
+                                                                <td>the Bird</td>
+                                                                <td>@twitter</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div id="texts" class="container tab-pane fade"><br>
+                                                    <div class="container">
+                                                        <dib class="row">
+                                                            <div class="col-3 border-right">
+                                                                <ul class="nav flex-column nav-leng">
+                                                                    <li class="nav-item"><a class="nav-link active" href="#">Ru</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#">En</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="#">Kz</a></li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-9">
+                                                                <p>Вы отправили SMS на номер {Number}, цена услуги {Price}, для продолжения отправьте 1.</p>
+                                                            </div>
+                                                        </dib>
+                                                    </div>
+
+                                                </div>
+                                                <div id="connection" class="connection container tab-pane fade"><br>
+                                                    <div class="connection-bar">
+                                                        <!-- Nav tabs -->
+                                                        <ul class="nav flex-nowrap nav-tabs">
+                                                            <li class="nav-item p-0 m-0">
+                                                                <a class="nav-link active" href="#incomingConnection">Входящее соединение</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#group">Группы обслуживания</a>
+                                                            </li>
+                                                            <li class="nav-item">
+                                                                <a class="nav-link" href="#politics">Политика обсуждения</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <!-- Tab panes -->
+                                                    <div class="tab-content">
+                                                        <div id="incomingConnection" class="container tab-pane active"><br>
+                                                            <table id="tableModalConnectionId" class="table table-modal table-bordered mt-3" style="width:100%">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <td scope="col">Модуль</td>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td scope="row">Mark</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td scope="row">Mark</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td scope="row">Mark</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                        <div id="group" class="container tab-pane fade"><br></div>
+                                                        <div id="politics" class="container tab-pane fade"><br>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-10 col-sm-8 col-lg-3 mx-lg-3" style="background: #ffffff">
+                            <div class="scheme-mo"></div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    </body>
+
+</html>

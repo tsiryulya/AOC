@@ -1,0 +1,5 @@
+@import "mixin/font-face";
+@include font-face("SourceSansPro", "../fonts/sourcesanspro/SourceSansPro-Regular");
+
+$def-font: "SourceSansPro", sans-serif;
+
